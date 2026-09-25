@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>魔獸世界：永恆 UI｜BY 老哥</title>
+<title>BY 老哥｜魔獸世界：永恆 UI</title>
 
 <style>
 * {
@@ -20,7 +20,6 @@ body {
     min-height: 100vh;
 }
 
-/* 頁首 */
 header {
     text-align: center;
     padding: 55px 20px 38px;
@@ -49,7 +48,6 @@ header {
     line-height: 1.8;
 }
 
-/* 主內容 */
 .container {
     width: min(1180px, 92%);
     margin: 40px auto 60px;
@@ -63,14 +61,12 @@ header {
     margin-bottom: 25px;
 }
 
-/* UI 卡片排列 */
 .ui-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
-/* UI 卡片 */
 .ui-card {
     background: linear-gradient(145deg, #191919, #101010);
     border: 1px solid #51462d;
@@ -86,9 +82,9 @@ header {
 
 .ui-name {
     color: #efc96c;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .version {
@@ -102,13 +98,18 @@ header {
     font-size: 17px;
     font-weight: bold;
     margin-top: 18px;
-    margin-bottom: 7px;
+    margin-bottom: 9px;
 }
 
 .info-text {
     color: #c9c4b9;
-    line-height: 1.75;
+    line-height: 1.85;
     font-size: 15px;
+}
+
+.info-text ol {
+    margin: 0;
+    padding-left: 23px;
 }
 
 .download {
@@ -128,7 +129,6 @@ header {
     border-color: #d0a64d;
 }
 
-/* 安裝說明 */
 .install {
     margin-top: 40px;
     padding: 25px;
@@ -144,10 +144,9 @@ header {
 
 .install p {
     color: #bbb;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
-/* 頁尾 */
 footer {
     text-align: center;
     color: #666;
@@ -156,7 +155,6 @@ footer {
     font-size: 14px;
 }
 
-/* 手機 */
 @media (max-width: 750px) {
     .ui-grid {
         grid-template-columns: 1fr;
@@ -176,152 +174,221 @@ footer {
 <body>
 
 <header>
+
     <div class="logo">BY 老哥</div>
-    <div class="subtitle">魔獸世界：永恆｜自製 UI 下載中心</div>
+
+    <div class="subtitle">
+        魔獸世界：永恆｜自製 UI 下載中心
+    </div>
 
     <div class="description">
         自己使用、自己測試、自己製作的《魔獸世界：永恆》便利 UI。
         以簡單、實用、不影響正常遊戲操作為主要設計方向。
     </div>
+
 </header>
 
 
 <main class="container">
 
-    <div class="section-title">UI 下載</div>
+<div class="section-title">UI 下載</div>
 
-    <div class="ui-grid">
-
-
-        <!-- FXP -->
-        <div class="ui-card">
-
-            <div class="ui-name">FXP - BY 老哥</div>
-            <div class="version">目前版本：v0.11</div>
-
-            <div class="info-title">檔案功能介紹</div>
-            <div class="info-text">
-                顯示角色目前經驗值、升級所需經驗值以及目前的經驗加成狀態，
-                讓練級時可以直接掌握經驗進度。
-            </div>
-
-            <div class="info-title">檔案使用介紹</div>
-            <div class="info-text">
-                安裝後自動顯示。<br>
-                可自由移動顯示位置，並可調整背景與顯示大小。<br>
-                小地圖 X 按鈕可開啟相關設定。
-            </div>
-
-            <a class="download" href="#">
-                下載 FXP v0.11
-            </a>
-
-        </div>
+<div class="ui-grid">
 
 
-        <!-- FAR -->
-        <div class="ui-card">
+<!-- FXP -->
+<div class="ui-card">
 
-            <div class="ui-name">FAR - BY 老哥</div>
-            <div class="version">目前版本：v0.04</div>
-
-            <div class="info-title">檔案功能介紹</div>
-            <div class="info-text">
-                開啟商人時，自動出售安全的灰色垃圾物品，
-                並自動使用角色自己的金錢修理裝備。
-            </div>
-
-            <div class="info-title">檔案使用介紹</div>
-            <div class="info-text">
-                無需任何設定。<br>
-                與商人 NPC 對話後自動執行。<br>
-                不使用公會資金修理裝備。
-            </div>
-
-            <a class="download" href="#">
-                下載 FAR v0.04
-            </a>
-
-        </div>
-
-
-        <!-- FWM -->
-        <div class="ui-card">
-
-            <div class="ui-name">FWM - BY 老哥</div>
-            <div class="version">目前版本：v0.05</div>
-
-            <div class="info-title">檔案功能介紹</div>
-            <div class="info-text">
-                讓遊戲原本固定位置的合併背包可以自由拖曳，
-                並能調整整個背包的顯示大小。
-            </div>
-
-            <div class="info-title">檔案使用介紹</div>
-            <div class="info-text">
-                抓住背包上方標題區即可自由移動。<br>
-                滑鼠位於背包區域時，按住 Ctrl＋滑鼠滾輪調整大小。<br>
-                Ctrl＋向上滾＝放大；Ctrl＋向下滾＝縮小。<br>
-                位置與大小會自動保存。
-            </div>
-
-            <a class="download" href="#">
-                下載 FWM v0.05
-            </a>
-
-        </div>
-
-
-        <!-- FWT -->
-        <div class="ui-card">
-
-            <div class="ui-name">FWT - BY 老哥</div>
-            <div class="version">目前版本：v0.53</div>
-
-            <div class="info-title">檔案功能介紹</div>
-            <div class="info-text">
-                顯示角色目前所在的 World ID／位面資訊，
-                方便確認角色目前所在的遊戲位面。
-            </div>
-
-            <div class="info-title">檔案使用介紹</div>
-            <div class="info-text">
-                安裝後即可使用。<br>
-                小地圖 F 按鈕可開啟介面。<br>
-                目前版本以本機位面偵測與顯示功能為主。
-            </div>
-
-            <a class="download" href="#">
-                下載 FWT v0.53
-            </a>
-
-        </div>
-
-
-        <!--
-        ==================================================
-        未來新的 UI 從這裡繼續增加
-        預計可放約 10 個 BY 老哥系列 UI
-        ==================================================
-        -->
-
-
+    <div class="ui-name">
+        FXP｜經驗值加成顯示
     </div>
 
-
-    <div class="install">
-
-        <h2>UI 安裝方式</h2>
-
-        <p>
-            1. 下載需要的 UI ZIP 壓縮檔。<br>
-            2. 將 ZIP 解壓縮。<br>
-            3. 將 UI 資料夾放入《魔獸世界：永恆》的 AddOns 資料夾。<br>
-            4. 重新啟動遊戲或輸入 /reload。<br>
-            5. 在角色選擇畫面確認插件已啟用。
-        </p>
-
+    <div class="version">
+        目前版本：v0.11
     </div>
+
+    <div class="info-title">
+        檔案功能介紹
+    </div>
+
+    <div class="info-text">
+        顯示角色目前經驗加成狀態，讓練級時可以直接掌握經驗進度。
+    </div>
+
+    <div class="info-title">
+        檔案使用介紹
+    </div>
+
+    <div class="info-text">
+        <ol>
+            <li>安裝後自動顯示。</li>
+            <li>可自由移動位置，並可調整背景與顯示大小。</li>
+            <li>小地圖上會有 X 按鈕，可開啟相關設定。</li>
+        </ol>
+    </div>
+
+    <a class="download" href="#">
+        下載 FXP v0.11
+    </a>
+
+</div>
+
+
+<!-- FAR -->
+<div class="ui-card">
+
+    <div class="ui-name">
+        FAR｜自動賣垃圾與修理
+    </div>
+
+    <div class="version">
+        目前版本：v0.04
+    </div>
+
+    <div class="info-title">
+        檔案功能介紹
+    </div>
+
+    <div class="info-text">
+        <ol>
+            <li>開啟商人時，自動出售安全的灰色垃圾物品。</li>
+            <li>開啟修理裝備商人時，自動修理裝備。</li>
+        </ol>
+    </div>
+
+    <div class="info-title">
+        檔案使用介紹
+    </div>
+
+    <div class="info-text">
+        <ol>
+            <li>無需任何設定。</li>
+            <li>與 NPC 對話後自動執行。</li>
+            <li>小地圖上不會有按鈕。</li>
+        </ol>
+    </div>
+
+    <a class="download" href="#">
+        下載 FAR v0.04
+    </a>
+
+</div>
+
+
+<!-- FWM -->
+<div class="ui-card">
+
+    <div class="ui-name">
+        FWM｜背包自由移動／縮放
+    </div>
+
+    <div class="version">
+        目前版本：v0.05
+    </div>
+
+    <div class="info-title">
+        檔案功能介紹
+    </div>
+
+    <div class="info-text">
+        <ol>
+            <li>原本固定位置的合併背包可以自由拖曳。</li>
+            <li>可以調整背包顯示大小。</li>
+        </ol>
+    </div>
+
+    <div class="info-title">
+        檔案使用介紹
+    </div>
+
+    <div class="info-text">
+        <ol>
+            <li>抓住背包上方標題區即可自由移動。</li>
+            <li>滑鼠位於背包區域時，按住 Ctrl＋滑鼠滾輪調整大小。</li>
+            <li>Ctrl＋向上滾＝放大；Ctrl＋向下滾＝縮小。</li>
+            <li>背包位置與大小會自動保存。</li>
+        </ol>
+    </div>
+
+    <a class="download" href="#">
+        下載 FWM v0.05
+    </a>
+
+</div>
+
+
+<!-- FWT -->
+<div class="ui-card">
+
+    <div class="ui-name">
+        FWT｜位面交換器（半成品）
+    </div>
+
+    <div class="version">
+        目前版本：v0.53
+    </div>
+
+    <div class="info-title">
+        檔案功能介紹
+    </div>
+
+    <div class="info-text">
+        <ol>
+            <li>顯示自己目前位面。</li>
+            <li>顯示他人目前所在位面。</li>
+            <li>可向他人申請組隊，將自己改變到他人的位面。</li>
+            <li>挖礦、採集、獵人抓稀有寵物，很好用。</li>
+        </ol>
+    </div>
+
+    <div class="info-title">
+        檔案使用介紹
+    </div>
+
+    <div class="info-text">
+        <ol>
+            <li>安裝後即可使用。</li>
+            <li>有安裝本 UI 且為同陣營的人才能看到彼此。</li>
+            <li>小地圖 F 按鈕可開啟介面。</li>
+            <li>
+                因為需要同陣營多人協助測試本 UI，目前沒有人能幫忙，
+                只能先提供偵測自己位面為主。等到有人願意幫忙測試，
+                成功的時候會再做更新。
+            </li>
+        </ol>
+    </div>
+
+    <a class="download" href="#">
+        下載 FWT v0.53
+    </a>
+
+</div>
+
+
+<!--
+======================================================
+以後新的 UI 繼續放在這裡
+網站預計約 10 個 UI
+======================================================
+-->
+
+
+</div>
+
+
+<div class="install">
+
+    <h2>UI 安裝方式</h2>
+
+    <p>
+        1. 下載需要的 UI ZIP 壓縮檔。<br>
+        2. 將 ZIP 解壓縮。<br>
+        3. 將 UI 資料夾放入《魔獸世界：永恆》的 AddOns 資料夾。<br>
+        4. 重新啟動遊戲或輸入 /reload。<br>
+        5. 在角色選擇畫面確認插件已啟用。
+    </p>
+
+</div>
 
 </main>
 
